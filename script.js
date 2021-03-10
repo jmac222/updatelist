@@ -31,9 +31,7 @@ function addToList() {
     console.log(birthdayNumbers[2]);
     let canDrink = false;
     let age = birthday - birthdayNumbers[0];
-    if (age += 21) {
-        canDrink = true;
-    }
+    
 
     let extraCost = 0;
     extraCost += numberOfBags * 20;
