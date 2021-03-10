@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
+ 
 <body>
     <div class="first-col">
         <h3>PASSENGER TRAVEL FORM</h3>
         <h4>( * is required)</h4>
         <label for="firstName">First Name*</label>
-        <input type="text" value="Kyle" id="firstName" placeholder="First Name">
+        <input type="text" value="John" id="firstName" placeholder="First Name">
         <label for="lastName">Last Name*</label>
-        <input type="text" value="Peck" id="lastName" placeholder="Last Name">
+        <input type="text" value="McFarland" id="lastName" placeholder="Last Name">
         <div class="col">
             <label for="DoB">Date of Birth*</label>
-            <input type="date" value="1990-10-06" id="DoB" placeholder="MM/DD/YYYY" class="space">
+            <input type="date" value="2003-10-14" id="birthday" placeholder="MM/DD/YYYY" class="space">
         </div>
         <label for="departing">Departure City*</label>
-        <input type="text" value="Phoenix, AZ" id="departing" placeholder="City, State (Phoenix, AZ)">
+        <input type="text" value="Phoenix, AZ" id="departureCity" placeholder="City, State (Phoenix, AZ)">
         <label for="arriving">Arrival City*</label>
-        <input type="text" value="Atlanta, GA" id="arriving" placeholder="City, State (Atlanta, GA)">
+        <input type="text" value="Atlanta, GA" id="arrivalCity" placeholder="City, State (Atlanta, GA)">
         <div class="col">
             <label for="leaveDate">Date leaving*</label>
-            <input type="date" value="2021-01-27" name="leaveDate" id="leaveDate" placeholder="MM/DD/YYYY">
+            <input type="date" value="2021-01-27" name="dateLeaving" id="dateLeaving" placeholder="MM/DD/YYYY">
         </div>
         <div class="col space">
             <label for="returnDate">Date Returning*</label>
-            <input type="date" value="2021-01-30" name="returnDate" id="returnDate" placeholder="MM/DD/YYYY">
+            <input type="date" value="2021-01-30" name="dateReturning" id="dateReturning" placeholder="MM/DD/YYYY">
         </div>
         <div class="col space">
             <label for="bags" class="bags">How many bags?</label>
-            <input type="number" class="bags" name="bags" id="bags" placeholder="#" value="0">
+            <input type="number" class="bags" name="numberOfBags" id="numberOfBags" placeholder="#" value="0">
         </div>
         <label for="meal" class="lessspace">What kind of meal would you like?</label>
         <div class="col space">
@@ -131,10 +131,10 @@
             <p style="margin-left: 20px;">Cost:</p>
             <p id="outcost" style="margin-left: 10px;">$300</p>
         </div>
-        <button onclick="updateList()">Submit Changes</button>
+        <button onclick= "addToList()">Submit Changes</button>
         <div id="success"></div>
         <div id="names">
-
+            
         </div>
 
     </div>
